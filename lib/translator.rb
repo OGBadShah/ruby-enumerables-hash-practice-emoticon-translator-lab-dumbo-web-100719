@@ -28,6 +28,15 @@ end
 
 
 
-def get_english_meaning
+def get_english_meaning(file_path, emoticon)
+  equivalent = load_library(file_path)
+  if equivalent[:get_emoticon][emoticon]
+    return equivalent[:get_emoticon][emoticon]
+  else
+    return "Sorry, that emoticon was not found"
+  end
+
+
+  
   # code goes here
 end
