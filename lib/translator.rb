@@ -17,8 +17,8 @@ end
 
 def get_japanese_emoticon(file_path, emoticon)
   equivalent = load_library(file_path)
-  if equivalent = hash_new[:get_meaning][emoticon]
-    return equivalent
+  if equivalent[:get_meaning][emoticon]
+    return equivalent[:get_meaning][emoticon]
   else
     return "Sorry, that emoticon was not found"
   end
