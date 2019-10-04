@@ -16,7 +16,7 @@ end
 
 
 def get_japanese_emoticon(file_path, emoticon)
-  hash.new =load_library(file_path)
+  equivalent = load_library(file_path)
   if equivalent = hash_new[:get_meaning][emoticon]
     return equivalent
   else
